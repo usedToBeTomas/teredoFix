@@ -30,3 +30,7 @@ Port = Same port, 52586<br>
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
 - If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
 - It's very likely that you'll have to reboot your computer a few times before it starts working, but if it does not work after 2/3 reboot 5 minutes apart from each others, it probably wont even after 100
+## Extra steps if it did not work
+Check if it worked after every step
+- Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
+- Reset your network: settings > Network & internet > scroll down > Network reset, you have to re-run teredoFix.bat after the reset
