@@ -1,6 +1,6 @@
 INSTRUCTIONS
 
-- Run teredoFix.bat as administrator > wait for it to say Press any key to continue... > press a key
+- Run teredoFix.bat as administrator > Windows Defender might show up click on More informations and then Run (code is open-source so you can check that it is safe) > wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds, wait.
 - Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
 press Check again > wait > you should have NAT limited and Server Connected > if not start from the beginning of the guide
