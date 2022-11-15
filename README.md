@@ -1,7 +1,7 @@
 - Run teredoFix.bat as administrator > wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds, wait.
 - Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
-press Check again > wait > you should have NAT limited and Server Connected > if not start from the beginning og the guide
+press Check again > wait > you should have NAT limited and Server Connected > if not start from the beginning of the guide
 - Search cmd on windows bar > open cmd > write ipconfig and hit enter > look for Predefined Gateway and Ipv4 address, save them for later
 - Open web browser paste Predefined Gateway ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi)
