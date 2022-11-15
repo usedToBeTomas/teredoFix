@@ -2,7 +2,7 @@
 
 ## Run teredoFix.bat
 - Run teredoFix.bat as administrator
-- Windows Defender might show up click on More informations and then Run (code is open-source so you can check that it is safe)
+- Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - Wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds > wait.
 ## Check if you gained Limited NAT
