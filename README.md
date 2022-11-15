@@ -1,3 +1,5 @@
+INSTRUCTIONS
+
 - Run teredoFix.bat as administrator > wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds, wait.
 - Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
