@@ -11,4 +11,4 @@ press Check again > wait > you should have NAT limited and Server Connected > if
 - Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
 - If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
-- It's very likely that you have to reboot your computer a few times before it starts working, but if it does not after 3 reboot 5 minutes apart from each others, it probably wont even after 100
+- It's very likely that you'll have to reboot your computer a few times before it starts working, but if it does not after 3 reboot 5 minutes apart from each others, it probably wont even after 100
