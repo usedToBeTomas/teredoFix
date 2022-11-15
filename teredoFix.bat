@@ -1,7 +1,7 @@
 netsh int teredo set state type=enterpriseclient
 netsh int teredo set state refreshinterval=20
 netsh int teredo set state clientport=52586
-netsh int teredo set state servername=win1910.ipv6.microsoft.com.
+netsh int teredo set state servername=win1910.ipv6.microsoft.com
 sc config iphlpsvc start=auto
 sc config PolicyAgent start=auto
 net stop iphlpsvc
