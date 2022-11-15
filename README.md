@@ -33,4 +33,7 @@ press Check again > wait > you should have NAT open and Server Connected > if no
 ## Extra steps if it did not work
 Check if it worked after every step
 - Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
+- If you have more than 1 xbox connected to your wifi it could be using the same port so: open cmd as administrator and paste<br>
+netsh int teredo set state clientport=52586<br>
+change 52586 with an other number like 3544 and hit enter, cmd should respond with OK.
 - Reset your network: settings > Network & internet > scroll down > Network reset, you have to re-run teredoFix.bat after the reset
