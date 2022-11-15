@@ -8,7 +8,7 @@
 ## Check if you gained Limited NAT
 - Open settings > games > xbox networking
 - Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited and Server Connected
-- If not, start from the beginning of the guide
+- If not, start from the beginning of the guide, or look at the extra steps at the bottom.
 - If, for some resons, at this point you already have Open NAT you are done! Otherwise continue with the next step.
 ## Set-up Port Forwarding to gain Open NAT
 - Search cmd on windows bar > open cmd > write ipconfig and hit enter > look for *Predefined Gateway* and *Ipv4 address*, save them for later (ex. 192.168.1.1 , 192.168.1.45)
