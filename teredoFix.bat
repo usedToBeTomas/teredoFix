@@ -8,7 +8,6 @@ net stop iphlpsvc
 net start iphlpsvc
 net stop PolicyAgent
 net start PolicyAgent
-w32tm /resync
 netsh int teredo show state
 echo Computer will reboot in 30 seconds press any key to continue...
 pause
