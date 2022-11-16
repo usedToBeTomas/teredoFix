@@ -23,7 +23,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
 - Once you logged in search for Port mapping and than create a new rule, some routers have the option *port mapping for known applications*, that's the preferred option.
 - If you have port mapping for known applications than select it and select xbox live for windows application, than select your PC as local host, (if it asks for the ip address paste the *Ipv4* you saved previously)
-- Otherwise create your own custom rule:<br>
+- If you don't have port mapping for known applications than create your own custom rule:<br>
 :white_medium_small_square: Under Traffic comming from:<br>
 You set up your interface (If you can choose between interfaces choose the one that has your public ip address in it (ussualy set by default), if you don't know your public ip address search on google "what's my ip").<br>
 If it asks: Any host = set yes<br>
