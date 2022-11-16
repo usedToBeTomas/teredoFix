@@ -1,6 +1,6 @@
 netsh int teredo set state type=enterpriseclient
 netsh int teredo set state refreshinterval=20
-netsh int teredo set state clientport=52586
+netsh int teredo set state clientport=3074
 netsh int teredo set state servername=default
 sc config iphlpsvc start=auto
 sc config PolicyAgent start=auto
