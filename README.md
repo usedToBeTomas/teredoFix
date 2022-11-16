@@ -1,16 +1,16 @@
-# INSTRUCTIONS
+# :gear:INSTRUCTIONS
 
-## Run teredoFix.bat
+## Run teredoFix.bat :runner:
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - Wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds > wait.
-## Check if you gained Limited NAT
+## Check if you gained Limited NAT :heavy_check_mark:
 - Open settings > games > xbox networking
 - Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited and Server Connected
 - If not, start from the beginning of the guide, or look at the extra steps at the bottom.
 - If, for some resons, at this point you already have Open NAT you are done! Otherwise continue with the next step.
-## Set-up Port Forwarding to gain Open NAT
+## Set-up Port Forwarding to gain Open NAT :twisted_rightwards_arrows:
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for *Predefined Gateway* and *Ipv4 address*, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the *Predefined Gateway* ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
@@ -30,7 +30,7 @@ Port = Same port, 52586<br>
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
 - If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
 - It's very likely that you'll have to reboot your computer a few times before it starts working, but if it does not work after 2/3 reboot 5 minutes apart from each others, it probably wont even after 100
-## Extra steps if it did not work
+## Extra steps if it did not work :bangbang:
 Check if it worked after every step
 - Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
 - If you have more than 1 xbox connected to your wifi it could be using the same port so: open cmd as administrator and paste<br>
