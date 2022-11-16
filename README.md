@@ -12,8 +12,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
-- Wait for it to say Press any key to continue... > press a key
-- Computer will automatically reboot in 30 seconds > wait.
+- Wait for it to say Press any key to continue... > press a key > computer will automatically reboot in 30 seconds > wait.
 - Once the computer is back on, open settings > games > xbox networking
 - Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited or NAT moderate and Server Connected. Sometimes this is all you need to make your games work, other times your router will still block teredo traffic, in that case continue with the next steps.
 - If you don't have neither limited or moderate NAT you can try the *Fix it* button (Usually does nothing), otherwise start from the beginning of the guide and re-run teredoFix.bat or look at the extra steps at the bottom.
