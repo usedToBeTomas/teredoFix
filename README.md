@@ -3,6 +3,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 ## Run teredoFix.bat :runner:
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
+- In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
 - Wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds > wait.
 ## Check if you gained Limited NAT :heavy_check_mark:
