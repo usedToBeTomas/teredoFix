@@ -9,7 +9,7 @@ If you think i skipped some infomration or you found an other solution not inclu
 - Less than 5 minutes to fix teredo issues using teredoFix.bat
 - 5-20 minutes for setting up the Port Forward on your router
 ## Run teredoFix.bat :runner:
-- Press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
+- On this gihub page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
