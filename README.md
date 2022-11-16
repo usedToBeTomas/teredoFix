@@ -2,7 +2,7 @@
 Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 ## Basic requirements :white_check_mark:
 - Be able to follow instructions and not skip steps
-- Firewall needs to be enabled and on standard settings
+- Firewall needs to be enabled and on standard settings, (External antivirus can sometimes interfere with it, so disable all antivirus firewall).
 - To gain open NAT, you are very likely going to need username and password of your wifi router
 - 3 minutes for teredoFix
 - 5-20 minutes for setting up the Port Forward on your router
