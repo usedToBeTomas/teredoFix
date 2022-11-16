@@ -34,7 +34,7 @@ Host name = select your computer if there is a list of all conected devices<br>
 Host ip = paste *Ipv4* you saved previously (It's the local ip address of your computer)<br>
 Port = Same port, 3074<br>
 - APPLY ALL MODIFICATIONS
-- Wait 5 minutes
+- Wait 5 minutes (Sometimes router will take some time to apply modifications)
 - Reboot your computer
 - Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
