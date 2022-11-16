@@ -13,7 +13,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Computer will automatically reboot in 30 seconds > wait.
 - Once the computer is back on, open settings > games > xbox networking
 - Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited and Server Connected
-- If not, start from the beginning of the guide, or look at the extra steps at the bottom.
+- If not, you can try the *Fix it* button (Usually does nothing), otherwise start from the beginning of the guide and re-run teredoFix.bat or look at the extra steps at the bottom.
 - If, for some resons, at this point you already have Open NAT you are done! Otherwise continue with the next step.
 ## Set-up Port Forwarding to gain Open NAT :twisted_rightwards_arrows:
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for *Predefined Gateway* and *Ipv4 address*, save them for later (ex. 192.168.1.1 , 192.168.1.45)
