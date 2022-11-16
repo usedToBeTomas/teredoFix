@@ -18,7 +18,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Under Traffic comming from:<br>
 You set up your interface (If you can choose between interfaces choose the one that has your public ip address in it (ussualy set by default), if you don't know your public ip address search on google "what's my ip").<br>
 If it asks: Any host = set yes<br>
-If it ask: Any port = set no, than specify port 52586<br>
+If it ask: Any port = set no, than specify port 3074<br>
 - Under Traffic directed to:<br>
 Host name = select your computer if there is a list of all conected devices<br>
 Host ip = paste *Ipv4* you saved previously (It's the local ip address of your computer)<br>
@@ -34,5 +34,5 @@ press Check again > wait > you should have NAT open and Server Connected > if no
 Check if it worked after every step
 - Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
 - If you have more than 1 xbox connected to your wifi it could be using the same port so: open cmd as administrator and paste<br>
-```netsh int teredo set state clientport=52586```, change 52586 with an other number like 3544 and hit enter, cmd should respond with OK. Than you have to use that port also on the port forward.
+```netsh int teredo set state clientport=3074```, change 52586 with an other number like 3544 and hit enter, cmd should respond with OK. Than you have to use that port also on the port forward.
 - Reset your network (will reset clientport and all teredo settings): settings > Network & internet > scroll down > Network reset, you have to re-run teredoFix.bat after the reset
