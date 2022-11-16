@@ -1,5 +1,5 @@
 # :gear:INSTRUCTIONS
-
+Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 ## Run teredoFix.bat :runner:
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
