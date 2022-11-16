@@ -5,7 +5,7 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Firewall needs to be enabled and on standard settings, (External antivirus can sometimes interfere with it, so disable all antivirus firewall).
 - If you have installed any VPN software, try to disable them.
 - To gain open NAT, you are very likely going to need username and password of your wifi router
-- 3 minutes for teredoFix
+- Less than 5 minutes to fix teredo issues using teredoFix.bat
 - 5-20 minutes for setting up the Port Forward on your router
 ## Run teredoFix.bat :runner:
 - Run teredoFix.bat as administrator
