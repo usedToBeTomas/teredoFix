@@ -1,4 +1,5 @@
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
+netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
 netsh int teredo set state type=enterpriseclient
 netsh int teredo set state refreshinterval=20
 netsh int teredo set state clientport=3074
