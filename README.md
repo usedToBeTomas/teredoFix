@@ -15,12 +15,14 @@ Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for *Predefined Gateway* and *Ipv4 address*, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the *Predefined Gateway* ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
-- Once you logged in search for Port mapping and than create a new rule:
-- Under Traffic comming from:<br>
+- Once you logged in search for Port mapping and than create a new rule, some routers have the option *port mapping for known applications*, that's the preferred option.
+- If you have port mapping for known applications than select it and select xbox live for windows application, than select your PC as local host, (if it asks for the ip address paste the *Ipv4* you saved previously)
+- Otherwise create your own custom rule:<br>
+:white_medium_small_square: Under Traffic comming from:<br>
 You set up your interface (If you can choose between interfaces choose the one that has your public ip address in it (ussualy set by default), if you don't know your public ip address search on google "what's my ip").<br>
 If it asks: Any host = set yes<br>
 If it ask: Any port = set no, than specify port 3074<br>
-- Under Traffic directed to:<br>
+:white_medium_small_square: Under Traffic directed to:<br>
 Host name = select your computer if there is a list of all conected devices<br>
 Host ip = paste *Ipv4* you saved previously (It's the local ip address of your computer)<br>
 Port = Same port, 52586<br>
@@ -35,5 +37,5 @@ press Check again > wait > you should have NAT open and Server Connected > if no
 Check if it worked after every step
 - Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
 - If you have more than 1 xbox connected to your wifi it could be using the same port so: open cmd as administrator and paste<br>
-```netsh int teredo set state clientport=3074```, change 3074 with an other number like 3544 or 52586 and hit enter, cmd should respond with OK. Than you have to use that port also on the port forward.
+```netsh int teredo set state clientport=3074```, change 3074 with an other number like 3544 or 52586 and hit enter, cmd should respond with OK. Than you have to use that port also on the port forward (Must use custom rule to change port).
 - Reset your network (will reset clientport and all teredo settings): settings > Network & internet > scroll down > Network reset, you have to re-run teredoFix.bat after the reset
