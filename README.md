@@ -1,5 +1,6 @@
 # :gear:INSTRUCTIONS
-Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
+Teredo Universal Fix Guide 0.10, Updated 16/11/2022.<br>
+If you think i skipped some infomration or you found an other solution not included here, you can create an issue here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo-related problem.
 ## Basic requirements :white_check_mark:
 - Be able to follow instructions and not skip steps
 - Firewall needs to be enabled and on standard settings, (External antivirus can sometimes interfere with it, so disable all antivirus firewall).
