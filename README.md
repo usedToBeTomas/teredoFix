@@ -30,7 +30,7 @@ If it ask: Any port = set no, than specify port 3074<br>
 :white_medium_small_square: Under Traffic directed to:<br>
 Host name = select your computer if there is a list of all conected devices<br>
 Host ip = paste *Ipv4* you saved previously (It's the local ip address of your computer)<br>
-Port = Same port, 52586<br>
+Port = Same port, 3074<br>
 - APPLY ALL MODIFICATIONS
 - Wait 5 to 10 minutes
 - Reboot your computer
