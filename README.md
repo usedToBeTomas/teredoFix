@@ -1,13 +1,17 @@
 # :gear:INSTRUCTIONS
 Teredo Universal Fix Guide 0.10, Updated 16/11/2022.
+## Basic requirements :white_check_mark:
+- Firewall needs to be enabled and on standard settings
+- To gain open NAT, you are very likely going to need username and password of your wifi router
+- 3 minutes for teredoFix
+- 5-20 minutes for setting up the Port Forward on your router
 ## Run teredoFix.bat :runner:
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
 - Wait for it to say Press any key to continue... > press a key
 - Computer will automatically reboot in 30 seconds > wait.
-## Check if you gained Limited NAT :heavy_check_mark:
-- Open settings > games > xbox networking
+- Once the computer is back on, open settings > games > xbox networking
 - Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited and Server Connected
 - If not, start from the beginning of the guide, or look at the extra steps at the bottom.
 - If, for some resons, at this point you already have Open NAT you are done! Otherwise continue with the next step.
