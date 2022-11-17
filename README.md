@@ -1,5 +1,9 @@
-# :gear:INSTRUCTIONS
-Teredo Universal Fix Guide 0.02, Updated 17/11/2022.<br>
+# :racing_car: FAST GUIDE (If you don't have time) 
+- On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
+- Run teredoFix.bat as administrator, computer will automatically reboot in 30 seconds
+- If you still don't have open NAT you have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port.
+# :books: FULL IN DEPTH GUIDE
+Teredo Universal Fix Guide 0.03, Updated 17/11/2022.<br>
 If you think i skipped some infomration or you found an other solution not included here, you can create an issue here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo-related problem.
 ## Basic requirements :white_check_mark:
 - Be able to follow instructions and not skip steps
