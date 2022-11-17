@@ -1,4 +1,4 @@
-# :racing_car: FAST GUIDE (If you don't have time) 
+# :racing_car: FAST GUIDE
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
 - Run teredoFix.bat as administrator, computer will automatically reboot in 30 seconds
 - If you still don't have open NAT you have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port.
