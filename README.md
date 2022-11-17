@@ -1,15 +1,15 @@
 # :gear:INSTRUCTIONS
-Teredo Universal Fix Guide 0.10, Updated 16/11/2022.<br>
+Teredo Universal Fix Guide 0.02, Updated 17/11/2022.<br>
 If you think i skipped some infomration or you found an other solution not included here, you can create an issue here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo-related problem.
 ## Basic requirements :white_check_mark:
 - Be able to follow instructions and not skip steps
 - Firewall needs to be enabled and on standard settings, (if you never touched it, it's probably fine), also antiviruses can sometimes interfere with it, so disable all antivirus firewall).
 - If you have installed any VPN software, try to disable them.
-- To gain open NAT, you are very likely going to need username and password of your wifi router
+- To gain open NAT, you are likely going to need username and password of your wifi router
 - Less than 5 minutes to fix teredo issues using teredoFix.bat
 - 5-20 minutes for setting up the Port Forward on your router
 ## Run teredoFix.bat :runner:
-- On this gihub page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
+- On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
 - Run teredoFix.bat as administrator
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
