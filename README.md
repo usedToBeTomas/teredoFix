@@ -7,7 +7,7 @@ If you think i skipped some infomration or you found an other solution not inclu
 - If you have installed any VPN software, try to disable them.
 - To gain open NAT, you are likely going to need username and password of your wifi router
 - Less than 5 minutes to fix teredo issues using teredoFix.bat
-- 5-20 minutes for setting up the Port Forward on your router
+- 5-20 minutes for setting up the Port Forward, if your router blocks teredo connections
 ## Run teredoFix.bat :runner:
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
 - Run teredoFix.bat as administrator
