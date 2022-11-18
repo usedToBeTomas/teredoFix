@@ -1,3 +1,4 @@
+echo off
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
 netsh int teredo set state type=enterpriseclient
@@ -11,8 +12,6 @@ net start iphlpsvc
 net stop PolicyAgent
 net start PolicyAgent
 netsh int teredo show state
-
-echo off
 echo .
 echo .
 echo .
