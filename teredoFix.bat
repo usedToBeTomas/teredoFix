@@ -11,6 +11,23 @@ net start iphlpsvc
 net stop PolicyAgent
 net start PolicyAgent
 netsh int teredo show state
-echo Computer will reboot in 30 seconds press any key to continue...
+
+echo off
+echo .
+echo .
+echo .
+echo .
+echo     dP                                    dP           88888888b dP dP    dP
+echo     88                                    88           88        88 Y8.  .8P
+echo   d8888P .d8888b. 88d888b. .d8888b. .d888b88 .d8888b. a88aaaa    88  Y8aa8P
+echo     88   88ooood8 88'  `88 88ooood8 88'  `88 88'  `88  88        88 d8'  `8b
+echo     88   88.  ... 88       88.  ... 88.  .88 88.  .88  88        88 88    88
+echo     dP   `88888P' dP       `88888P' `88888P8 `88888P'  dP        dP dP    dP
+echo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+echo .
+echo .
+echo .
+echo .
+echo Computer will reboot in 30 seconds press any key to confirm...
 pause
 shutdown -r -t 30
