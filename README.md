@@ -5,7 +5,7 @@
 - If you still don't have open NAT you have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
 # :books: FULL IN DEPTH GUIDE
 Teredo Universal Fix Guide 0.03, Updated 17/11/2022.<br>
-If you think i skipped some infomration or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
+If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
 ## Basic requirements :white_check_mark:
 - Be able to follow instructions and not skip steps
 - Firewall needs to be enabled and on standard settings, (if you never touched it, it's probably fine), also antiviruses can sometimes interfere with it, so disable all antivirus firewall).
