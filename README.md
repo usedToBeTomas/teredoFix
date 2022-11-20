@@ -1,8 +1,8 @@
 # :comet: FAST GUIDE
 - Remove any VPN software, disable thirdparty antivirus firewall, keep windows firewall enabled and on standard settings.
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder.
-- Run teredoFix.bat as administrator, computer will automatically reboot in 30 seconds.
-- If you still don't have open NAT try rebooting or else you have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
+- Open teredoFix.bat, computer will automatically reboot in 30 seconds.
+- If you still don't have open NAT try rebooting or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
 # :books: FULL IN DEPTH GUIDE
 Teredo Universal Fix Guide 0.03, Updated 17/11/2022.<br>
 If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
@@ -15,7 +15,7 @@ If you think i skipped some informations or you found an other solution not incl
 - 5-20 minutes for setting up the Port Forward, if your router blocks teredo connections
 ## Run teredoFix.bat :runner:
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder
-- Run teredoFix.bat as administrator
+- Open teredoFix.bat, it will ask the permission to run as administrator, confirm.
 - Windows Defender might show up, click on More informations and then Run (code is open-source so you can check that it is safe)
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
 - Wait for it to say Press any key to continue... > press a key > computer will automatically reboot in 30 seconds > wait.
