@@ -1,4 +1,28 @@
 echo off
+echo .
+echo .
+echo .
+echo .
+echo           888                                   888          8888888888 d8b
+echo           888                                   888          888        Y8P
+echo           888                                   888          888
+echo           888888  .d88b.  888d888  .d88b.   .d88888  .d88b.  8888888    888 888  888
+echo           888    d8P  Y8b 888P"   d8P  Y8b d88" 888 d88""88b 888        888 `Y8bd8P'
+echo           888    88888888 888     88888888 888  888 888  888 888        888   X88K
+echo           Y88b.  Y8b.     888     Y8b.     Y88b 888 Y88..88P 888        888 .d8""8b.
+echo            "Y888  "Y8888  888      "Y8888   "Y88888  "Y88P"  888        888 888  888
+echo    ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+echo    teredoFix.bat Vers: 0.04 20/11/2022 fix teredo setup, firewall, iphelper, policyagent, time
+echo .
+echo .
+echo .
+echo                              Press y and enter when requested.
+echo .
+echo .
+echo .
+echo .
+echo .
+pause
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
 netsh int teredo set state type=enterpriseclient
@@ -16,17 +40,24 @@ echo .
 echo .
 echo .
 echo .
-echo     dP                                    dP           88888888b dP dP    dP
-echo     88                                    88           88        88 Y8.  .8P
-echo   d8888P .d8888b. 88d888b. .d8888b. .d888b88 .d8888b. a88aaaa    88  Y8aa8P
-echo     88   88ooood8 88'  `88 88ooood8 88'  `88 88'  `88  88        88 d8'  `8b
-echo     88   88.  ... 88       88.  ... 88.  .88 88.  .88  88        88 88    88
-echo     dP   `88888P' dP       `88888P' `88888P8 `88888P'  dP        dP dP    dP
-echo oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+echo        .d8888b.                                  888          888                  888
+echo       d88P  Y88b                                 888          888                  888
+echo       888    888                                 888          888                  888
+echo       888         .d88b.  88888b.d88b.  88888b.  888  .d88b.  888888  .d88b.   .d88888
+echo       888        d88""88b 888 "888 "88b 888 "88b 888 d8P  Y8b 888    d8P  Y8b d88" 888
+echo       888    888 888  888 888  888  888 888  888 888 88888888 888    88888888 888  888
+echo       Y88b  d88P Y88..88P 888  888  888 888 d88P 888 Y8b.     Y88b.  Y8b.     Y88b 888
+echo        "Y8888P"   "Y88P"  888  888  888 88888P"  888  "Y8888   "Y888  "Y8888   "Y88888
+echo                                        888
+echo                                        888
+echo                                        888
+echo .
+echo .
+echo .
+echo               Computer will reboot in 30 seconds press any key to confirm...
 echo .
 echo .
 echo .
 echo .
-echo Computer will reboot in 30 seconds press any key to confirm...
 pause
 shutdown -r -t 30
