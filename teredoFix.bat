@@ -120,3 +120,4 @@ echo:
 echo:
 echo:
 pause
+shutdown -r -t 30
