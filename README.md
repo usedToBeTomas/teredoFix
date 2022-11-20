@@ -1,5 +1,5 @@
 # :comet: FAST GUIDE
-- Remove any VPN software, disable thirdparty antivirus firewall, keep windows firewall enabled and on standard settings.
+- Remove any VPN software, disable thirdparty firewall protection in antivirus, keep windows firewall enabled and on standard settings.
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder.
 - Open teredoFix.bat, computer will automatically reboot in 30 seconds.
 - If you still don't have open NAT try rebooting or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
