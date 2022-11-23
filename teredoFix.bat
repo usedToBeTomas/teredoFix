@@ -47,7 +47,7 @@ echo                  888    88888888 888     88888888 888  888 888  888 888    
 echo                  Y88b.  Y8b.     888     Y8b.     Y88b 888 Y88..88P 888        888 .d8""8b.
 echo                   "Y888  "Y8888  888      "Y8888   "Y88888  "Y88P"  888        888 888  888
 echo           ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-echo           teredoFix.bat Vers: 0.04 20/11/2022 fix teredo setup, firewall, iphelper, policyagent, time
+echo           teredoFix.bat Vers: 0.05 23/11/2022 fix teredo setup, firewall, iphelper, policyagent, time
 echo:
 echo:
 echo:
