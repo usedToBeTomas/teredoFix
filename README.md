@@ -2,7 +2,7 @@
 - Remove any VPN software, disable thirdparty firewall protection in antivirus, keep windows firewall enabled and on standard settings.
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder.
 - Open teredoFix.bat, computer will automatically reboot in 30 seconds.
-- If you still don't have open NAT try to use the "Fix" button in windows settings and than reboot or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
+- Check if you have open NAT in settings > games > xbox networking, if you still don't have open NAT try to use the "Fix" button in windows settings and than reboot or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited try rebooting and than the "fix" button.
 # :books: FULL IN DEPTH GUIDE
 Teredo Universal Fix Guide 0.03, Updated 17/11/2022.<br>
 If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
@@ -10,7 +10,7 @@ If you think i skipped some informations or you found an other solution not incl
 - Be able to follow instructions and not skip steps
 - Firewall needs to be enabled and on standard settings, (if you never touched it, it's probably fine), also antiviruses can sometimes interfere with it, so disable all antivirus firewall).
 - If you have installed any VPN software, try to disable them.
-- To gain open NAT, you are likely going to need username and password of your wifi router
+- To gain open NAT, you may need username and password of your wifi router
 - Less than 5 minutes to fix teredo issues using teredoFix.bat
 - 5-20 minutes for setting up the Port Forward, if your router blocks teredo connections
 ## Run teredoFix.bat :runner:
