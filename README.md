@@ -20,9 +20,9 @@ If you think i skipped some informations or you found an other solution not incl
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
 - Wait for it to say Press any key to continue... > press a key > computer will automatically reboot in 30 seconds > wait.
 - Once the computer is back on, open settings > games > xbox networking
-- Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT limited or NAT moderate and Server Connected. Sometimes this is all you need to make your games work, other times your router will still block teredo traffic, in that case continue with the next steps.
-- If you don't have neither limited or moderate NAT you can try the *Fix it* button (Usually does nothing), otherwise start from the beginning of the guide and re-run teredoFix.bat or look at the extra steps at the bottom.
-- If, for some resons, at this point you already have Open NAT you are done! Otherwise continue with the next steps.
+- Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT open/NAT limited/NAT moderate and Server Connected.
+- If you don't have either of them you can try the *Fix it* button, otherwise start from the beginning of the guide and re-run teredoFix.bat or look at the extra steps at the bottom.
+- If at this point you have Open NAT you are done! Otherwise continue with the next steps.
 ## Set-up Port Forwarding to gain Open NAT :twisted_rightwards_arrows:
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
