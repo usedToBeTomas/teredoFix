@@ -2,14 +2,12 @@
 
 :: BatchGotAdmin
 :-------------------------------------
-REM  --> Check for permissions
     IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
 ) ELSE (
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
 )
 
-REM --> If error flag set, we do not have admin.
 if '%errorlevel%' NEQ '0' (
     echo Requesting administrative privileges...
     goto UACPrompt
@@ -47,7 +45,7 @@ echo                  888    88888888 888     88888888 888  888 888  888 888    
 echo                  Y88b.  Y8b.     888     Y8b.     Y88b 888 Y88..88P 888        888 .d8""8b.
 echo                   "Y888  "Y8888  888      "Y8888   "Y88888  "Y88P"  888        888 888  888
 echo           ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-echo           teredoFix.bat Vers: 0.05 23/11/2022 fix teredo setup, firewall, iphelper, policyagent, time
+echo                           teredoFix.bat Vers: 0.1.0 24/11/2022 fix teredo connection
 echo:
 echo:
 echo:
@@ -75,9 +73,6 @@ net start iphlpsvc
 net stop PolicyAgent
 net start PolicyAgent
 netsh int teredo show state
-echo:
-echo:
-echo:
 echo:
 echo:
 echo:
