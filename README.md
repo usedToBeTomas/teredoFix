@@ -1,4 +1,4 @@
-# :comet: FAST GUIDE
+# :cyclone: FAST GUIDE
 - Remove any VPN software, disable thirdparty firewall protection in antivirus, keep windows firewall enabled and on standard settings.
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download teredoFix.bat > unzip the folder.
 - Open teredoFix.bat, computer will automatically reboot in 30 seconds.
