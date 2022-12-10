@@ -20,7 +20,7 @@ If you think i skipped some informations or you found an other solution not incl
 - In some cases it may ask for confirmation to restart some network services, proceed by confirming, usually by writing y and hitting enter (y could be another letter depending on your language).
 - Wait for it to say Press any key to continue... > press a key > computer will automatically reboot in 30 seconds > wait.
 - Once the computer is back on, open settings > games > xbox networking
-- Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NAT open/NAT limited/NAT moderate and Server Connected.
+- Wait the loading -> might still say teredo unable to qualify so press "Check again" button, wait and you should have NATopen or NATlimited or NATmoderate and Server Connected.
 - If you don't have either of them you can try the *Fix it* button, otherwise start from the beginning of the guide and re-run teredoFix.bat or look at the extra steps at the bottom.
 - If at this point you have Open NAT you are done! Otherwise continue with the next steps.
 ## Set-up Port Forwarding to gain Open NAT :twisted_rightwards_arrows:
