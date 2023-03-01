@@ -1,5 +1,4 @@
 @echo off
-
 :: BatchGotAdmin
 :-------------------------------------
     IF "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
@@ -45,13 +44,13 @@ echo                  888    88888888 888     88888888 888  888 888  888 888    
 echo                  Y88b.  Y8b.     888     Y8b.     Y88b 888 Y88..88P 888        888 .d8""8b.
 echo                   "Y888  "Y8888  888      "Y8888   "Y88888  "Y88P"  888        888 888  888
 echo           ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-echo                           teredoFix.bat Vers: 0.5.0 24/11/2022 fix teredo connection
+echo                           teredoFix.bat Vers: 0.6.0 01/03/2023 fix teredo connection
+echo:
+echo:
+echo                                             PRESS ANY KEY...
 echo:
 echo:
 echo:
-echo                                    Press y and hit enter when requested.
-echo:
-echo                                         Press any key to continue...
 echo:
 echo:
 echo:
@@ -59,6 +58,20 @@ echo:
 echo:
 echo:
 pause
+:reload
+cls
+echo SELECT IF YOU WANT TO FIX AND ENABLE TEREDO OR DISABLE TEREDO:
+echo 1 - FIX AND ENABLE TEREDO
+echo 2 - DISABLE TEREDO AND REVERT ALL CHANGES
+echo:
+set /p choice="ENTER NUMBER: "
+IF "%choice%"=="1" goto enable
+IF "%choice%"=="2" goto disable
+IF %ERRORLEVEL% EQU 0 goto reload
+IF %ERRORLEVEL% EQU 1 goto reload
+
+:enable
+cls
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 netsh advfirewall firewall delete rule name="4jxr4b3r3du76ina39a98x8k2" dir=in
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
@@ -68,11 +81,7 @@ netsh int teredo set state clientport=3074
 netsh int teredo set state servername=default
 sc config iphlpsvc start=auto
 sc config PolicyAgent start=auto
-net stop iphlpsvc
-net start iphlpsvc
-net stop PolicyAgent
-net start PolicyAgent
-netsh int teredo show state
+cls
 echo:
 echo:
 echo:
@@ -86,27 +95,16 @@ echo:
 echo:
 echo:
 echo:
+echo                               8888888b.                             888
+echo                               888  "Y88b                            888
+echo                               888    888                            888
+echo                               888    888  .d88b.  88888b.   .d88b.  888
+echo                               888    888 d88""88b 888 "88b d8P  Y8b 888
+echo                               888    888 888  888 888  888 88888888 Y8P
+echo                               888  .d88P Y88..88P 888  888 Y8b.      "
+echo                               8888888P"   "Y88P"  888  888  "Y8888  888
 echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo                     8888888b.                             888
-echo                     888  "Y88b                            888
-echo                     888    888                            888
-echo                     888    888  .d88b.  88888b.   .d88b.  888
-echo                     888    888 d88""88b 888 "88b d8P  Y8b 888
-echo                     888    888 888  888 888  888 88888888 Y8P
-echo                     888  .d88P Y88..88P 888  888 Y8b.      "
-echo                     8888888P"   "Y88P"  888  888  "Y8888  888
-echo:
-echo:
-echo:
-echo             Computer will reboot in 30 seconds press any key to confirm...
-echo:
-echo:
+echo                      Computer will reboot in 30 seconds press any key to confirm...
 echo:
 echo:
 echo:
@@ -117,3 +115,41 @@ echo:
 echo:
 pause
 shutdown -r -t 30
+exit
+
+:disable
+netsh interface teredo set state disabled
+cls
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo                               8888888b.                             888
+echo                               888  "Y88b                            888
+echo                               888    888                            888
+echo                               888    888  .d88b.  88888b.   .d88b.  888
+echo                               888    888 d88""88b 888 "88b d8P  Y8b 888
+echo                               888    888 888  888 888  888 88888888 Y8P
+echo                               888  .d88P Y88..88P 888  888 Y8b.      "
+echo                               8888888P"   "Y88P"  888  888  "Y8888  888
+echo:
+echo                                   Press any key to exit the program...
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+echo:
+pause
+exit
