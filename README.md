@@ -3,13 +3,12 @@ If you think i skipped some informations or you found an other solution not incl
 # :open_book: GUIDE
 - Remove any VPN software, disable firewall protection in thirdparty antiviruses, keep windows firewall enabled and on standard settings (check extras if you want to reset your windows firewall).
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder.
-- Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe) computer will automatically reboot in 30 seconds. Fix is done!
+- Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), computer will automatically reboot in 30 seconds. Fix is done!
 - Check if you have open NAT (You can check only on Windows 10) go to: settings > games > xbox networking, if you still don't have open NAT try to use the "Fix" button in windows settings and than reboot or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited NAT try rebooting and than the "fix" button. (Check the extras for detailed explanation on setting up the port-forward)
 # :pushpin: EXTRAS
 ## Disable teredo (fix Rainbow Six Siege):no_entry_sign:
 - Some games like Rainbow Six Siege, don't like teredo connection enabled, here's an easy fix, keep in mind that disabling teredo will make games that request the use of teredo not work anymore (Astroneer, Forza Horizon ...)
-- Press win key, search ```cmd```, right click, open as Administrator
-- Paste ```netsh interface teredo set state disabled```, hit enter, wait for the Ok. You are done!
+- Run teredoFix.bat but select option 2 - DISABLE TEREDO AND REVERT ALL CHANGES
 ## Set-up Port Forwarding :twisted_rightwards_arrows:
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
