@@ -7,6 +7,7 @@ If you think i skipped some informations or you found an other solution not incl
 - Check if you have open NAT (You can check only on Windows 10) go to: settings > games > xbox networking, if you still don't have open NAT try to use the "Fix" button in windows settings and than reboot or else you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited NAT try rebooting and than the "fix" button. (Check the extras for detailed explanation on setting up the port-forward)
 # :pushpin: EXTRAS
 ## Disable teredo (fix Rainbow Six Siege):no_entry_sign:
+- Some games like Rainbow Six Siege, don't like teredo connection enabled, here's an easy fix, keep in mind that disabling teredo will make games that request the use of teredo not work anymore (Astroneer, Forza Horizon ...)
 - Press win key, search ```cmd```, right click, open as Administrator
 - Paste ```netsh interface teredo set state disabled```, hit enter, wait for the Ok. You are done!
 ## Set-up Port Forwarding :twisted_rightwards_arrows:
