@@ -8,7 +8,7 @@ If you think i skipped some informations or you found an other solution not incl
 # :pushpin: EXTRAS
 ## Disable teredo (fix Rainbow Six Siege):no_entry_sign:
 - Some games like Rainbow Six Siege, don't like teredo connection enabled, here's an easy fix, keep in mind that disabling teredo will make games that request the use of teredo not work anymore (Astroneer, Forza Horizon ...)
-- Run teredoFix.bat but select option 2 - DISABLE TEREDO AND REVERT ALL CHANGES
+- Run teredoFix.bat but select option ```2 - DISABLE TEREDO AND REVERT ALL CHANGES```
 ## Set-up Port Forwarding :twisted_rightwards_arrows:
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
