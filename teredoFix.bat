@@ -118,7 +118,7 @@ shutdown -r -t 30
 exit
 
 :disable
-netsh interface teredo set state disabled
+netsh winsock reset
 cls
 echo:
 echo:
@@ -152,4 +152,5 @@ echo:
 echo:
 echo:
 pause
+shutdown -r -t 30
 exit
