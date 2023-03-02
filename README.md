@@ -35,4 +35,6 @@ press Check again > wait > you should have NAT open and Server Connected > if no
 ## Reset windows firewall :fire:
 - Check your firewall: control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
 ## Reset your device network config :signal_strength:
-- Reset your network (will reset clientport and all teredo settings): settings > Network & internet > scroll down > Network reset, you have to re-run teredoFix.bat after the reset
+- Resetting your network will reset clientport and all teredo settings.
+- Windows 10 = Settings > Network & internet > scroll down > Network reset.
+- Windows 11 = Settings > Network and internet > Advanced Network settings > under the title "More settings" > Network reset > Yes.
