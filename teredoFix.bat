@@ -81,6 +81,15 @@ netsh int teredo set state clientport=3074
 netsh int teredo set state servername=default
 sc config iphlpsvc start=auto
 sc config PolicyAgent start=auto
+goto end
+
+
+:disable
+cls
+netsh winsock reset
+goto end
+
+:end
 cls
 echo:
 echo:
@@ -105,44 +114,6 @@ echo                               888  .d88P Y88..88P 888  888 Y8b.      "
 echo                               8888888P"   "Y88P"  888  888  "Y8888  888
 echo:
 echo                      Computer will reboot in 30 seconds press any key to confirm...
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-pause
-shutdown -r -t 30
-exit
-
-:disable
-netsh winsock reset
-cls
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo:
-echo                               8888888b.                             888
-echo                               888  "Y88b                            888
-echo                               888    888                            888
-echo                               888    888  .d88b.  88888b.   .d88b.  888
-echo                               888    888 d88""88b 888 "88b d8P  Y8b 888
-echo                               888    888 888  888 888  888 88888888 Y8P
-echo                               888  .d88P Y88..88P 888  888 Y8b.      "
-echo                               8888888P"   "Y88P"  888  888  "Y8888  888
-echo:
-echo                                   Press any key to exit the program...
 echo:
 echo:
 echo:
