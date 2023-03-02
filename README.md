@@ -1,4 +1,4 @@
-Teredo General Fix 0.6.0, Updated 01/03/2023.<br>
+Teredo General Fix 0.6.1, Updated 02/03/2023.<br>
 If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
 # :open_book: GUIDE
 - Remove any VPN software, disable firewall protection in thirdparty antiviruses, keep windows firewall enabled and on standard settings (check extras if you want to reset your windows firewall).
