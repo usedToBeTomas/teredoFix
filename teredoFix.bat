@@ -87,6 +87,7 @@ goto end
 :disable
 cls
 netsh winsock reset
+netsh interface teredo set state disabled
 goto end
 
 :end
