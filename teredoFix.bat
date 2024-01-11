@@ -44,7 +44,7 @@ echo                  888    88888888 888     88888888 888  888 888  888 888    
 echo                  Y88b.  Y8b.     888     Y8b.     Y88b 888 Y88..88P 888        888 .d8""8b.
 echo                   "Y888  "Y8888  888      "Y8888   "Y88888  "Y88P"  888        888 888  888
 echo           ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-echo                           teredoFix.bat Vers: 0.6.1 02/03/2023 fix teredo connection
+echo                           teredoFix.bat Vers: 0.6.2 09/01/2024 fix teredo connection
 echo:
 echo:
 echo                                             PRESS ANY KEY...
@@ -60,7 +60,7 @@ echo:
 pause
 :reload
 cls
-echo SELECT IF YOU WANT TO FIX AND ENABLE TEREDO OR DISABLE TEREDO:
+echo SELECT THE DESIRED OPTION BY WRITING THE CORRESPONDING NUMBER AND PRESSING ENTER:
 echo 1 - FIX AND ENABLE TEREDO
 echo 2 - DISABLE TEREDO AND REVERT ALL CHANGES
 echo:
