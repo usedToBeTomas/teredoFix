@@ -72,6 +72,7 @@ IF %ERRORLEVEL% EQU 1 goto reload
 
 :enable
 cls
+netsh winsock reset
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 netsh advfirewall firewall delete rule name="4jxr4b3r3du76ina39a98x8k2" dir=in
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
