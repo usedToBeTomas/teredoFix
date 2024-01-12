@@ -72,8 +72,6 @@ IF %ERRORLEVEL% EQU 1 goto reload
 
 :enable
 cls
-netsh winsock reset
-netsh advfirewall reset
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
 netsh int teredo set state type=enterpriseclient
@@ -87,7 +85,6 @@ goto end
 
 :disable
 cls
-netsh winsock reset
 netsh interface teredo set state disabled
 goto end
 
