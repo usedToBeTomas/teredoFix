@@ -4,7 +4,9 @@ If you think i skipped some informations or you found an other solution not incl
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder.
 - Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
 - The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction.
+<div align="center">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
+</div>
 
 # :pushpin: EXTRAS
 ## Disable teredo (fix Rainbow Six Siege)
