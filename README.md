@@ -32,9 +32,3 @@ Port = Same port, 3074<br>
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
 - If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
 - If it still does not work run teredoFix.bat an other time, wait for the computer to reboot and check again
-## Reset windows firewall :fire:
-- Control panel > System and Security > Windows Defender Firewall > On the left side press: Restore predefined settings
-## Reset your device network config :signal_strength:
-- Resetting your network will reset clientport and all teredo settings.
-- Windows 10 = Settings > Network & internet > scroll down > Network reset.
-- Windows 11 = Settings > Network and internet > Advanced Network settings > under the title "More settings" > Network reset > Yes.
