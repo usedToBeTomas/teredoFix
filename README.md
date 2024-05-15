@@ -1,9 +1,7 @@
-If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
 # :open_book: INSTRUCTIONS
 - Disable any VPN software, disable firewall protection in thirdparty antiviruses, keep windows firewall on standard settings (check extras if you want to reset your windows firewall).
-- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder.
-- Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
-- The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction.
+- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder. Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
+- The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction. The ui helps you understand the status of your teredo connection, follow the suggestions of the script and enjoy :)
 <div align="center">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
 </div>
@@ -34,3 +32,7 @@ Port = Same port, 3074<br>
 press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
 - If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
 - If it still does not work run teredoFix.bat an other time, wait for the computer to reboot and check again
+
+___
+
+If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
