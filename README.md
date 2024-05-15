@@ -2,10 +2,12 @@ If you think i skipped some informations or you found an other solution not incl
 # :open_book: INSTRUCTIONS
 - Disable any VPN software, disable firewall protection in thirdparty antiviruses, keep windows firewall on standard settings (check extras if you want to reset your windows firewall).
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder.
-- Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start, when asked to select between ```1 - FIX AND ENABLE TEREDO``` and ```2 - DISABLE TEREDO AND REVERT ALL CHANGES``` write 1 and press enter, computer will automatically reboot in 30 seconds. Fix is done!
-- Check if you have open NAT, sometimes teredo will not start until you open the xbox app. If you still don't have it working you may have to access your router and set a port forward that redirects incomming traffic to your public ip address on port ```3074``` to the local ip address of your computer on the same port. If after the port forward you still have limited NAT try rebooting and than the "fix" button. (Check the extras for detailed explanation on setting up the port-forward)
+- Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
+- The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction.
+<img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
+
 # :pushpin: EXTRAS
-## Disable teredo (fix Rainbow Six Siege):no_entry_sign:
+## Disable teredo (fix Rainbow Six Siege)
 - Some games like Rainbow Six Siege, don't like teredo connection enabled, here's an easy fix, keep in mind that disabling teredo will make games that request the use of teredo not work anymore (Astroneer, Forza Horizon ...)
 - Run teredoFix.bat but select option ```2 - DISABLE TEREDO AND REVERT ALL CHANGES```
 ## Set-up Port Forwarding :twisted_rightwards_arrows:
