@@ -66,6 +66,8 @@ if %errorlevel% equ 0 (
     echo [90mTeredo is enabled, but your computer has not started the service yet.[0m
     echo [90mIf you have just booted up your pc, wait 5 minutes and check again, teredo takes few minutes to kick in.[0m
     echo [90mIf the service does not start after 5 minutes try rebooting the computer.[0m
+    echo [90Also make sure to disable any VPN software, disable firewall protection in thirdparty antiviruses[0m
+    echo [90and keep windows firewall on standard settings.[0m
     echo ________________________________________________________________________________________________________
 )
 
@@ -76,8 +78,10 @@ if %errorlevel% equ 0 (
     echo [90mTeredo services allowed by your router:[0m [91m[X][0m
     echo [90m_____________________________________________[0m
     echo:
-    echo [90mTeredo services have corectly statred on you pc, but you wifi router is blocking the traffic![0m
+    echo [90mTeredo services have correctly statred on you pc, but you wifi router is blocking the traffic![0m
     echo [90mIf you have just changed your teredo settings, wait 5 minutes, teredo may take few minutes to kick in.[0m
+    echo [90Also make sure to disable any VPN software, disable firewall protection in thirdparty antiviruses[0m
+    echo [90and keep windows firewall on standard settings.[0m
     echo [90mOtherwise follow the port-forwarding instruction on the github page https://github.com/usedToBeTomas/teredoFix[0m
     echo [90mAfter the port-forwarding, waiting and rebooting both the router and the pc can sometimes do miracles.[0m
     echo ______________________________________________________________________________________________________________
