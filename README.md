@@ -27,11 +27,8 @@ Host ip = paste ```Ipv4``` you saved previously (It's the local ip address of yo
 Port = Same port, 3074<br>
 - APPLY ALL MODIFICATIONS
 - Wait 5 minutes (Sometimes router will take some time to apply modifications)
-- Reboot your computer
-- Open settings > games > xbox networking > wait -> it will still say teredo unable to qualify > 
-press Check again > wait > you should have NAT open and Server Connected > if not press Fix and than Check again
-- If it still does not work try rebooting your wifi router and than your computer and try again to check if it worked
-- If it still does not work run teredoFix.bat an other time, wait for the computer to reboot and check again
+- If it still does not work try rebooting your wifi router and wait 5 minutes
+- Waiting and rebooting can sometimes do magic things with port-forwarding, it seems that some routers apply the new rules just when they feel like it.
 
 ___
 
