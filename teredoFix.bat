@@ -119,20 +119,53 @@ IF %ERRORLEVEL% EQU 1 goto reload
 
 :enable
 cls
-reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f
-netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound
-netsh int teredo set state type=enterpriseclient
-netsh int teredo set state refreshinterval=20
-netsh int teredo set state clientport=3074
-netsh int teredo set state servername=default
-sc config iphlpsvc start=auto
-sc config PolicyAgent start=auto
-net stop PolicyAgent /y
-net start PolicyAgent
-net stop iphlpsvc /y
-net start iphlpsvc
-echo starting...
-timeout 8 > NUL
+echo Progress [=                     ]
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f > NUL
+cls
+echo Progress [==                    ]
+netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound > NUL
+cls
+echo Progress [===                   ]
+netsh int teredo set state type=enterpriseclient > NUL
+cls
+echo Progress [====                  ]
+netsh int teredo set state refreshinterval=20 > NUL
+cls
+echo Progress [=====                 ]
+netsh int teredo set state clientport=3074 > NUL
+cls
+echo Progress [======                ]
+netsh int teredo set state servername=default > NUL
+cls
+echo Progress [=======               ]
+sc config iphlpsvc start=auto > NUL
+cls
+echo Progress [========              ]
+sc config PolicyAgent start=auto > NUL
+cls
+echo Progress [==========            ]
+net stop PolicyAgent /y > NUL
+cls
+echo Progress [============          ]
+net start PolicyAgent > NUL
+cls
+echo Progress [==============        ]
+net stop iphlpsvc /y > NUL
+cls
+echo Progress [===============       ]
+net start iphlpsvc > NUL
+cls
+echo Progress [================      ]
+timeout 2 > NUL
+cls
+echo Progress [=================     ]
+timeout 2 > NUL
+cls
+echo Progress [====================  ]
+timeout 2 > NUL
+cls
+echo Progress [======================]
+timeout 2 > NUL
 goto startscreen
 
 :disable
