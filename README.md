@@ -1,6 +1,6 @@
 # :open_book: INSTRUCTIONS
-- Disable any VPN software, disable firewall protection in thirdparty antiviruses, keep windows firewall on standard settings (check extras if you want to reset your windows firewall).
-- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script, unzip the folder. Run teredoFix.bat, windows defender will show up, click on More informations and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
+- Disable any VPN software, disable firewall protection in thirdparty antiviruses and keep windows firewall on standard settings.
+- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script. Unzip the folder, run teredoFix.bat, windows defender will show up, click on ```More informations``` and then Run (code is open-source so you can check that it is safe), when it asks "Do you want to allow this app to make changes to your device?" say yes, script will start.
 - The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction. The ui helps you understand the status of your teredo connection, follow the suggestions of the script and enjoy :)
 <div align="center">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
