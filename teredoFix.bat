@@ -49,7 +49,7 @@ echo !result! | find /i "disabled" > nul
 if %errorlevel% equ 0 (
     echo [90mTeredo is enabled your PC:[0m [91m[X][0m
     echo [90mTeredo services have stared on PC:[0m [91m[X][0m
-    echo [90mTeredo services allowed by your router:[0m [91m[X][0m
+    echo [90mTeredo connectivity allowed and working:[0m [91m[X][0m
     echo [90m______________________________________________[0m
     echo:
     echo [90mTeredo is disabled, select option 1 to apply the fix.[0m
@@ -60,7 +60,7 @@ echo !result! | find /i "dormant" > nul
 if %errorlevel% equ 0 (
     echo [90mTeredo is enabled on your PC:[0m [92m[V][0m
     echo [90mTeredo services have stared on PC:[0m [91m[X][0m
-    echo [90mTeredo services allowed by your router:[0m [91m[X][0m
+    echo [90mTeredo connectivity allowed and working:[0m [91m[X][0m
     echo [90m_____________________________________________[0m
     echo:
     echo [90mTeredo is enabled, but your computer has not started the service yet.[0m
@@ -73,17 +73,15 @@ echo !result! | find /i "symmetric" > nul
 if %errorlevel% equ 0 (
     echo [90mTeredo is enabled on your PC:[0m [92m[V][0m
     echo [90mTeredo services have stared on PC:[0m [92m[V][0m
-    echo [90mTeredo services allowed by your router:[0m [91m[X][0m
+    echo [90mTeredo connectivity allowed and working:[0m [91m[X][0m
     echo [90m_____________________________________________[0m
     echo:
-    echo [90mTeredo services have correctly statred on you pc, but your connection is blocking the traffic![0m
-    echo [90mIn most cases the issues are:[0m
+    echo [90mTeredo services have correctly statred on you pc, but the connectivity is blocked^^! The issues may be:[0m
     echo [90m - VPN software, make sure to disable any VPN[0m
     echo [90m - Thirdparty antiviruses firewall protection, disable that option in your antivirus[0m
-    echo [90m - Weird settings in you windows firewall, make sure to keep it on standard settings[0m
-    echo [90m - Lastly, the only remaining reason could be that your wifi router needs a prot-forward, in this case[0m
-    echo [90m   you can follow the port-forwarding instruction on the github page https://github.com/usedToBeTomas/teredoFix[0m
-    echo [90m   waiting some time and rebooting both the router and the pc can sometimes do miracles after port-forwarding.[0m
+    echo [90m - Windows firewall, make sure to keep it on standard settings[0m
+    echo [90m - Lastly, the only remaining reason could be that your wifi router is blocking the connection, in this case
+    echo [90m   you need to set up a prot-forward on your router. Instruction here: https://github.com/usedToBeTomas/teredoFix[0m
     echo ______________________________________________________________________________________________________________
 )
 
@@ -91,7 +89,7 @@ echo !result! | find /i "cone" > nul
 if %errorlevel% equ 0 (
     echo [90mTeredo is enabled on your PC:[0m [92m[V][0m
     echo [90mTeredo services have stared on PC:[0m [92m[V][0m
-    echo [90mTeredo services allowed by your router:[0m [92m[V][0m
+    echo [90mTeredo connectivity allowed and working:[0m [92m[V][0m
     echo [90m_____________________________________________[0m
     echo:
     echo [92mTeredo is working^^! You have open NAT^^!^^!^^![0m
