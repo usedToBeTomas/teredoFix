@@ -65,9 +65,7 @@ if %errorlevel% equ 0 (
     echo:
     echo [90mTeredo is enabled, but your computer has not started the service yet.[0m
     echo [90mIf you have just booted up your pc, wait 5 minutes and check again, teredo takes few minutes to kick in.[0m
-    echo [90mIf the service does not start after 5 minutes try rebooting the computer.[0m
-    echo [90Also make sure to disable any VPN software, disable firewall protection in thirdparty antiviruses[0m
-    echo [90and keep windows firewall on standard settings.[0m
+    echo [90mIf the service does not start after 5 minutes try rebooting the computer and wait an other 5 minutes.[0m
     echo ________________________________________________________________________________________________________
 )
 
@@ -78,12 +76,14 @@ if %errorlevel% equ 0 (
     echo [90mTeredo services allowed by your router:[0m [91m[X][0m
     echo [90m_____________________________________________[0m
     echo:
-    echo [90mTeredo services have correctly statred on you pc, but you wifi router is blocking the traffic![0m
-    echo [90mIf you have just changed your teredo settings, wait 5 minutes, teredo may take few minutes to kick in.[0m
-    echo [90Also make sure to disable any VPN software, disable firewall protection in thirdparty antiviruses[0m
-    echo [90and keep windows firewall on standard settings.[0m
-    echo [90mOtherwise follow the port-forwarding instruction on the github page https://github.com/usedToBeTomas/teredoFix[0m
-    echo [90mAfter the port-forwarding, waiting and rebooting both the router and the pc can sometimes do miracles.[0m
+    echo [90mTeredo services have correctly statred on you pc, but your connection is blocking the traffic![0m
+    echo [90mIn most cases the issues are:[0m
+    echo [90m - VPN software, make sure to disable any VPN[0m
+    echo [90m - Thirdparty antiviruses firewall protection, disable that option in your antivirus[0m
+    echo [90m - Weird settings in you windows firewall, make sure to keep it on standard settings[0m
+    echo [90m - Lastly, the only remaining reason could be that your wifi router needs a prot-forward, in this case[0m
+    echo [90m   you can follow the port-forwarding instruction on the github page https://github.com/usedToBeTomas/teredoFix[0m
+    echo [90m   waiting some time and rebooting both the router and the pc can sometimes do miracles after port-forwarding.[0m
     echo ______________________________________________________________________________________________________________
 )
 
@@ -127,6 +127,12 @@ netsh int teredo set state clientport=3074
 netsh int teredo set state servername=default
 sc config iphlpsvc start=auto
 sc config PolicyAgent start=auto
+net stop PolicyAgent /y
+net start PolicyAgent
+net stop iphlpsvc /y
+net start iphlpsvc
+echo starting...
+timeout 8 > NUL
 goto startscreen
 
 :disable
