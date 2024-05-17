@@ -9,11 +9,8 @@ This is a batch script that resolves many Teredo-related connectivity issues for
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
 </div>
 
-<br><br><br><br>
----
-
-# EXTRAS
-## Set-up Port Forwarding
+## Still not working, i think i need to port-forward on my router, how do i do it?
+- Some router will block teredo so you may need to do this thing called port-forwarding, so let's start!
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
@@ -29,10 +26,6 @@ Host name = select your computer if there is a list of all conected devices<br>
 Host ip = paste ```Ipv4``` you saved previously (It's the local ip address of your computer)<br>
 Port = Same port, 3074<br>
 - APPLY ALL MODIFICATIONS
-- Wait 5 minutes (Sometimes router will take some time to apply modifications)
-- If it still does not work try rebooting your wifi router and wait 5 minutes
+- Wait 5 minutes (Sometimes router will take some time to apply modifications), then check teredo using teredoFix.bat
+- If it still does not work try rebooting your wifi router, wait 5 minutes and check again
 - Waiting and rebooting can sometimes do magic things with port-forwarding, it seems that some routers apply the new rules just when they feel like it.
-
-___
-
-If you think i skipped some informations or you found an other solution not included here, you can create an issue or a pull request here on github and i'll try to implement it inside the teredoFix.bat, the ultimate goal is to create a general fix for every teredo/openNAT-related problem in the xbox app / microsoft multiplayer.
