@@ -1,16 +1,19 @@
-# :open_book: INSTRUCTIONS
-- Disable any VPN software, if you have an antivirus disable firewall protection in your antivirus.
-- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script. Unzip the folder, run teredoFix.bat, windows defender will show up, click on ```More informations``` and then Run (code is open-source so you can check that it is safe), when it asks ```Do you want to allow this app to make changes to your device?``` select yes.
+## What is this?
+This is a batch script that resolves many Teredo-related connectivity issues for multiplayer Xbox games on Windows and helps you address potential problems that may arise.
+
+## How do i run the fix?
+- Disable any VPN software, also if you have an antivirus, disable the firewall protection in your antivirus.
+- On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script. Unzip the folder, open teredoFix.bat, windows defender will show up, click on ```More informations``` and then Run (code is open-source so you can check that it is safe), when it asks ```Do you want to allow this app to make changes to your device?``` select yes.
 - The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction, select option ```1``` to enable teredo and follow the suggestions of the script, enjoy :)
 <div align="center">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
 </div>
 
-# :pushpin: EXTRAS
-## Disable teredo (fix Rainbow Six Siege)
-- Some games like Rainbow Six Siege, don't like teredo connection enabled, here's an easy fix, keep in mind that disabling teredo will make games that request the use of teredo not work anymore (Astroneer, Forza Horizon ...)
-- Run teredoFix.bat but select option ```2 - DISABLE TEREDO AND REVERT ALL CHANGES```
-## Set-up Port Forwarding :twisted_rightwards_arrows:
+<br><br><br><br>
+---
+
+# EXTRAS
+## Set-up Port Forwarding
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
