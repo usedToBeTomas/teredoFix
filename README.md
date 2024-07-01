@@ -6,7 +6,11 @@
 - On this github page, on the top right, press the green button "Code" and than "Download zip" to download the fix script. Unzip the folder, open teredoFix.bat, windows defender will show up, click on ```More informations``` and then Run (code is open-source so you can check that it is safe), when it asks ```Do you want to allow this app to make changes to your device?``` select yes.
 - The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction, select option ```1``` to enable teredo and follow the suggestions of the script, enjoy :)
 
-[![Tutorial](https://img.youtube.com/vi/ZV-Dm6zIgPY/0.jpg)](https://www.youtube.com/watch?v=ZV-Dm6zIgPY)
+
+
+https://github.com/usedToBeTomas/teredoFix/assets/85880657/cab4f1e8-89ed-4aa5-9447-209fd26380a5
+
+
 
 <br><br><br>
 
