@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download teredoFix.bat</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        .download-btn {
+            background-color: #lightgray;
+            color: rgb(170,170,170);
+            padding: 0.9em 1.8em;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 2vh;
+            transition: background-color 0.3s ease;
+            border: solid 0.1em rgb(210,210,210);
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background-color: rgb(230,230,230);
+        }
+        .donation-section {
+            margin-top: 30px;
+        }
+        .donation-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgb(30,30,30);
+            color: #fff;
+            padding: 0.9em 1.8em;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 2vh;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            border: solid 0.1em rgb(70,70,70);
+        }
+        .donation-btn:hover {
+            background-color: rgb(70,70,70);
+        }
+        .donation-btn img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+    <script>
+        function downloadFile(url, filename) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const a = document.createElement('a');
+                    const url = window.URL.createObjectURL(blob);
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(() => alert('Errore nel download del file.'));
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+      <h1>Download teredoFix.bat</h1>
+
+      <div class="donation-section">
+          <p>I spent a lot of time creating this script<br>still decided to make it free<br> but if you think it helped<br> you can make a donation</p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=M8SDSGAC9UZ22" class="donation-btn">
+              <img src="https://static-00.iconduck.com/assets.00/paypal-icon-1735x2048-7umw9cq7.png" alt="PayPal Logo">
+              Donate with PayPal
+          </a>
+      </div>
+      <br>
+      <button class="download-btn" onclick="downloadFile('https://raw.githubusercontent.com/usedToBeTomas/teredoFix/main/teredoFix.bat', 'teredoFix.bat')">Download teredoFix.bat</button>
+
+
+    </div>
+</body>
+</html>
