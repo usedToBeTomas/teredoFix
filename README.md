@@ -14,8 +14,9 @@
 - How do i know if i need to port-forward? You kinda dont, so if you already did run the teredoFix.bat and followed all the suggestion that it gave you, then the only remaining problem colud be your router.
 - This thing is called port-forwarding, the process it's quite easy and safe, let's start!
 - Write "cmd" on the windows search bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
-- Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
-- Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
+- Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter (not the google search-bar, the browser bar, the one where you can usually see the website address)
+- You should now see the login page for your router settings
+- Access using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
 - Once you logged in search for Port mapping and than create a new rule, some routers have the option *port mapping for known applications*, that's the preferred option.
 - If you have port mapping for known applications than select it and select xbox live for windows application, than select your PC as local host, (if it asks for the ip address paste the ```Ipv4``` you saved previously)
 - If you don't have port mapping for known applications than create your own custom rule:<br>
