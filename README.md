@@ -3,7 +3,7 @@
 
 ## How do i run the fix?
 - Disable any VPN software, also if you have an antivirus, disable the firewall protection in your antivirus.
-- [Download](https://github.com/usedToBeTomas/teredoFix/archive/refs/heads/main.zip) the script.
+- [Download](https://html-preview.github.io/?url=https://github.com/usedToBeTomas/teredoFix/blob/main/download.html) the script.
 - Unzip the folder, open teredoFix.bat, windows defender will show up, click on ```More informations``` and then Run (code is open-source so you can check that it is safe), when it asks ```Do you want to allow this app to make changes to your device?``` select yes.
 - The new version of the script automatically checks the teredo status and helps you figure out what to do by giving you instruction, select option ```1``` to enable teredo and follow the suggestions of the script, enjoy :)
 
