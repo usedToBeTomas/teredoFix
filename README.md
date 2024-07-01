@@ -1,5 +1,5 @@
 ## What is this?
-This is a batch script that resolves many Teredo-related connectivity issues for multiplayer Xbox games on Windows and helps you address potential problems that may arise.
+- This is a batch script that fixes Teredo issues with multiplayer for xbox games on windows (ex. Astroneer, Forza horizon, ).
 
 ## How do i run the fix?
 - Disable any VPN software, also if you have an antivirus, disable the firewall protection in your antivirus.
@@ -8,9 +8,11 @@ This is a batch script that resolves many Teredo-related connectivity issues for
 <div align="center">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/730eb14a-1c55-4282-b34b-6c2bd14ebb2e" width=70% height=auto>
 </div>
+<br><br><br>
 
 ## Still not working, i think i need to port-forward on my router, how do i do it?
-- Some router will block teredo so you may need to do this thing called port-forwarding, so let's start!
+- How do i know if i need to port-forward? You kinda dont, so if you already did run the teredoFix.bat and followed all the suggestion that it gave you, then the only remaining problem colud be your router.
+- This thing called port-forwarding, the process it's quite easy and safe, let's start!
 - Search cmd on windows bar > open cmd > write ```ipconfig``` and hit enter > look for ```Predefined Gateway``` and ```Ipv4 address```, save them for later (ex. 192.168.1.1 , 192.168.1.45)
 - Open web browser and paste the ```Predefined Gateway``` ip (ex. 192.168.1.1 or 192.168.0.1 etc...) on the top search bar and hit enter
 - Access your wifi router using username and password (they usually are on the bottom of the wifi router), (the password is not the same that you use to connect to your wifi). 
