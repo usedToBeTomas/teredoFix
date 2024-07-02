@@ -94,7 +94,8 @@ if %errorlevel% equ 0 (
     echo:
     echo [92mTeredo is working^^! You have open NAT^^!^^!^^![0m
     echo __________________________________________
-    endlocal
+    timeout 3 > NUL
+    rundll32 url.dll,FileProtocolHandler https://html-preview.github.io/?url=https://github.com/usedToBeTomas/teredoFix/blob/main/download.html
 )
 
 endlocal
