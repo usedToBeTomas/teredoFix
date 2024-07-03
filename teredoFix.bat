@@ -124,6 +124,14 @@ cls
 echo Progress [==                    ]
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound > NUL
 cls
+echo Progress [==                    ]
+set "hostfile=C:\Windows\System32\drivers\etc\hosts"
+set "tempfile=%temp%\hosts.tmp"
+set "search=win10.ipv6.microsoft.com"
+type "%hostfile%" > "%tempfile%"
+findstr /v /i "%search%" "%tempfile%" > "%hostfile%"
+del "%tempfile%"
+cls
 echo Progress [===                   ]
 netsh int teredo set state type=enterpriseclient > NUL
 cls
