@@ -114,6 +114,7 @@ if %errorlevel% equ 0 (
   timeout 3 > NUL
   rundll32 url.dll,FileProtocolHandler https://html-preview.github.io/?url=https://github.com/usedToBeTomas/teredoFix/blob/main/download.html
 )
+endlocal
 
 set /p choice="> "
 IF "%choice%"=="1" goto enable
