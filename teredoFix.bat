@@ -181,6 +181,7 @@ timeout 2 > NUL
 cls
 echo Progress [======================]
 timeout 2 > NUL
+endlocal
 goto startscreen
 
 :disable
