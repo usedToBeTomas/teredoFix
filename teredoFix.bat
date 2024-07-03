@@ -94,8 +94,6 @@ if %errorlevel% equ 0 (
     echo:
     echo [92mTeredo is working^^! You have open NAT^^!^^!^^![0m
     echo __________________________________________
-    timeout 3 > NUL
-    rundll32 url.dll,FileProtocolHandler https://html-preview.github.io/?url=https://github.com/usedToBeTomas/teredoFix/blob/main/download.html
 )
 
 endlocal
@@ -108,6 +106,15 @@ echo  1 - Fix and enable teredo
 echo  2 - Disable teredo and revert all changes
 echo  3 - Reload
 echo  4 - Exit
+
+setlocal enabledelayedexpansion
+for /f "delims=" %%i in ('netsh interface teredo show state') do set "result=!result! %%i"
+echo !result! | find /i "cone" > nul
+if %errorlevel% equ 0 (
+  timeout 3 > NUL
+  rundll32 url.dll,FileProtocolHandler https://html-preview.github.io/?url=https://github.com/usedToBeTomas/teredoFix/blob/main/download.html
+)
+
 set /p choice="> "
 IF "%choice%"=="1" goto enable
 IF "%choice%"=="2" goto disable
