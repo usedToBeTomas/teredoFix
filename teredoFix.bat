@@ -164,16 +164,19 @@ cls
 echo Progress [============          ]
 net start PolicyAgent > NUL
 cls
-echo Progress [==============        ]
+echo Progress [=============         ]
 net stop iphlpsvc /y > NUL
 cls
-echo Progress [===============       ]
+echo Progress [==============        ]
 net start iphlpsvc > NUL
+cls
+echo Progress [===============       ]
+timeout 2 > NUL
 cls
 echo Progress [================      ]
 timeout 2 > NUL
 cls
-echo Progress [=================     ]
+echo Progress [===================   ]
 timeout 2 > NUL
 cls
 echo Progress [====================  ]
@@ -181,7 +184,6 @@ timeout 2 > NUL
 cls
 echo Progress [======================]
 timeout 2 > NUL
-endlocal
 goto startscreen
 
 :disable
