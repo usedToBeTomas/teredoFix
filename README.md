@@ -9,7 +9,7 @@
 https://github.com/usedToBeTomas/teredoFix/assets/85880657/2b6a66d9-1e57-4b34-b472-139ea00d6368
 
 # It does not work i'm stuck here!
-You already run the script and this is what it says?<br>
+You have already ran the script and this is what it says?<br>
 <div align="left">
 <img src="https://github.com/usedToBeTomas/teredoFix/assets/85880657/c0ff6aa1-b56e-422b-bb1b-12a24c461a8d" width="60%" height="auto"/><br>
 </div>
