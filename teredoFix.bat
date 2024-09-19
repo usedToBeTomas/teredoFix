@@ -130,6 +130,8 @@ echo Progress [=                     ]
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f > NUL
 cls
 echo Progress [==                    ]
+netsh advfirewall reset > NUL
+netsh firewall reset > NUL
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound > NUL
 cls
 echo Progress [==                    ]
