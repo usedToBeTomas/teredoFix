@@ -128,6 +128,8 @@ IF %ERRORLEVEL% EQU 1 goto reload
 cls
 echo Progress [=                     ]
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f > NUL
+sc config AsusGameFirstService start= disabled >NUL 2>&1
+sc stop AsusGameFirstService >NUL 2>&1
 cls
 echo Progress [==                    ]
 netsh advfirewall reset > NUL
