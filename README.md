@@ -17,7 +17,7 @@ You have already ran the script and this is what it says?<br>
 The problems might be one of the following:
 - __VPN__ = You have to disable any kind of vpn running on your computer
 - __Antivirus firewall__ = Some third-party antivirus like avast, northon, etc... have an additional firewall protection, this will most likely create problems with teredo, you need to disable the firewall protection in your antivirus. (not the entire antivirus, only the firewall protection)
-- __WiFi Router settings__ = Most routers can manage teredo without any problems using a tecnology called UPnP, you can try to simply activate that in your router, but for reasons i'm still not really able to understand this will sometimes not work. So? how can i fix this? you can setup a port-forwarding rule on your router, more specifically you need to port-forward port 3074 (TCP/UDP) from your router to your pc.
+- __WiFi Router settings__ = Most routers can manage teredo without any problems using a tecnology called UPnP, you can try to simply activate that in your router, but for reasons i'm still not really able to understand this will sometimes not work. So? how can i fix this? you can setup a port-forwarding rule on your router, more specifically you need to port-forward port 3074 and 3544 (TCP/UDP) from your router to your pc.
 
 # UPDATE!
 I think i finally cracked the code to those port configuration mistery, sometimes even if everything was correctly setup, teredo would still not work, the issue is that other devices in your network, like an xbox are probably using that 3074 port for them.
