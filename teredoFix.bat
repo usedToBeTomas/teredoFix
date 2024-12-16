@@ -79,7 +79,6 @@ if %errorlevel% equ 0 (
     echo [90mTeredo services have correctly statred on you pc, but the connectivity is blocked^^! The issues may be:[0m
     echo [90m - VPN software, make sure to disable any VPN[0m
     echo [90m - Thirdparty antiviruses firewall protection, disable that option in your antivirus[0m
-    echo [90m - Windows firewall, make sure to keep it on standard settings[0m
     echo [90m - Lastly, the only remaining reason could be that your wifi router is blocking the connection, in this case
     echo [90m   you need to set up a prot-forward on your router. Instruction here: https://github.com/usedToBeTomas/teredoFix[0m
     echo ______________________________________________________________________________________________________________
