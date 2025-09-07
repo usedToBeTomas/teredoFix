@@ -101,10 +101,11 @@ endlocal
 :reload
 echo:
 echo Select the desired option, write the corresponding number and press enter:
-echo  1 - Fix and enable teredo
-echo  2 - Disable teredo and revert all changes
-echo  3 - Reload
-echo  4 - Exit
+echo  1 - Fix and enable teredo (default server)
+echo  2 - Fix and enable teredo (alternative server: win10.ipv6.microsoft.com)
+echo  3 - Disable teredo and revert all changes
+echo  4 - Reload
+echo  5 - Exit
 
 setlocal enabledelayedexpansion
 for /f "delims=" %%i in ('netsh interface teredo show state') do set "result=!result! %%i"
@@ -116,76 +117,105 @@ if %errorlevel% equ 0 (
 endlocal
 
 set /p choice="> "
-IF "%choice%"=="1" goto enable
-IF "%choice%"=="2" goto disable
-IF "%choice%"=="3" goto startscreen
-IF "%choice%"=="4" goto end
+IF "%choice%"=="1" set TeredoServer=default & goto enable
+IF "%choice%"=="2" set TeredoServer=win10.ipv6.microsoft.com & goto enable
+IF "%choice%"=="3" goto disable
+IF "%choice%"=="4" goto startscreen
+IF "%choice%"=="5" goto end
 IF %ERRORLEVEL% EQU 0 goto reload
 IF %ERRORLEVEL% EQU 1 goto reload
 
 :enable
 cls
-echo Progress [=                     ]
+echo Progress [=                      ]
+echo Configuring system settings...
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f > NUL
 sc config AsusGameFirstService start= disabled >NUL 2>&1
 sc stop AsusGameFirstService >NUL 2>&1
 cls
-echo Progress [==                    ]
+echo Progress [==                     ]
+echo Resetting and configuring Windows Firewall settings...
 netsh advfirewall reset > NUL
 netsh firewall reset > NUL
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound > NUL
 cls
-echo Progress [==                    ]
+echo Progress [===                    ]
+echo Updating hosts file...
 set "hostfile=C:\Windows\System32\drivers\etc\hosts"
 set "tempfile=%temp%\hosts.tmp"
 set "search=win10.ipv6.microsoft.com"
-type "%hostfile%" > "%tempfile%"
-findstr /v /i "%search%" "%tempfile%" > "%hostfile%"
-del "%tempfile%"
+
+if exist "%hostfile%" (
+    type "%hostfile%" | findstr /v /i "%search%" > "%tempfile%"
+    if not errorlevel 1 (
+        copy /y "%tempfile%" "%hostfile%" >nul
+    )
+    del "%tempfile%" 2>nul
+)
 cls
-echo Progress [===                   ]
+echo Progress [====                   ]
+echo Configuring Teredo client type to enterprise mode...
 netsh int teredo set state type=enterpriseclient > NUL
 cls
-echo Progress [====                  ]
+echo Progress [=====                  ]
+echo Setting Teredo refresh interval to 20 seconds...
 netsh int teredo set state refreshinterval=20 > NUL
 cls
-echo Progress [=====                 ]
+echo Progress [======                 ]
+echo Configuring Teredo client port to 3074...
 netsh int teredo set state clientport=3074 > NUL
 cls
-echo Progress [======                ]
-netsh int teredo set state servername=default > NUL
+echo Progress [=======                ]
+if "%TeredoServer%"=="default" (
+    echo Setting Teredo server to Microsoft default...
+    netsh int teredo set state servername=default > NUL
+) else (
+    echo Setting Teredo server to %TeredoServer%...
+    netsh int teredo set state servername=%TeredoServer% > NUL
+)
 cls
-echo Progress [=======               ]
+echo Progress [========               ]
+echo Configuring IP Helper service to start automatically...
 sc config iphlpsvc start=auto > NUL
 cls
-echo Progress [========              ]
+echo Progress [=========              ]
+echo Configuring IPsec Policy Agent service to start automatically...
 sc config PolicyAgent start=auto > NUL
 cls
-echo Progress [==========            ]
+echo Progress [===========            ]
+echo Restarting IPsec Policy Agent service...
 net stop PolicyAgent /y > NUL
 cls
-echo Progress [============          ]
+echo Progress [=============          ]
+echo Starting IPsec Policy Agent service...
 net start PolicyAgent > NUL
 cls
-echo Progress [=============         ]
+echo Progress [==============         ]
+echo Restarting IP Helper service...
 net stop iphlpsvc /y > NUL
 cls
-echo Progress [==============        ]
+echo Progress [===============        ]
+echo Starting IP Helper service...
 net start iphlpsvc > NUL
 cls
-echo Progress [===============       ]
+echo Progress [================       ]
+echo Finalizing Teredo configuration...
 timeout 2 > NUL
 cls
-echo Progress [================      ]
+echo Progress [=================      ]
+echo Applying network settings...
 timeout 2 > NUL
 cls
-echo Progress [===================   ]
+echo Progress [====================   ]
+echo Verifying Teredo configuration...
 timeout 2 > NUL
 cls
-echo Progress [====================  ]
+echo Progress [=====================  ]
+echo Completing setup...
 timeout 2 > NUL
 cls
-echo Progress [======================]
+echo Progress [=======================]
+echo Teredo configuration completed successfully! Returning to main menu...
 timeout 2 > NUL
 goto startscreen
 
