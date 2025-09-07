@@ -101,10 +101,11 @@ endlocal
 :reload
 echo:
 echo Select the desired option, write the corresponding number and press enter:
-echo  1 - Fix and enable teredo
-echo  2 - Disable teredo and revert all changes
-echo  3 - Reload
-echo  4 - Exit
+echo  1 - Fix and enable teredo (default server)
+echo  2 - Fix and enable teredo (alternative server: win10.ipv6.microsoft.com)
+echo  3 - Disable teredo and revert all changes
+echo  4 - Reload
+echo  5 - Exit
 
 setlocal enabledelayedexpansion
 for /f "delims=" %%i in ('netsh interface teredo show state') do set "result=!result! %%i"
@@ -116,10 +117,11 @@ if %errorlevel% equ 0 (
 endlocal
 
 set /p choice="> "
-IF "%choice%"=="1" goto enable
-IF "%choice%"=="2" goto disable
-IF "%choice%"=="3" goto startscreen
-IF "%choice%"=="4" goto end
+IF "%choice%"=="1" set TeredoServer=default & goto enable
+IF "%choice%"=="2" set TeredoServer=win10.ipv6.microsoft.com & goto enable
+IF "%choice%"=="3" goto disable
+IF "%choice%"=="4" goto startscreen
+IF "%choice%"=="5" goto end
 IF %ERRORLEVEL% EQU 0 goto reload
 IF %ERRORLEVEL% EQU 1 goto reload
 
@@ -153,7 +155,11 @@ echo Progress [=====                 ]
 netsh int teredo set state clientport=3074 > NUL
 cls
 echo Progress [======                ]
-netsh int teredo set state servername=default > NUL
+if "%TeredoServer%"=="default" (
+    netsh int teredo set state servername=default > NUL
+) else (
+    netsh int teredo set state servername=%TeredoServer% > NUL
+)
 cls
 echo Progress [=======               ]
 sc config iphlpsvc start=auto > NUL
