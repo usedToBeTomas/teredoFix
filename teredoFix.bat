@@ -127,17 +127,17 @@ IF %ERRORLEVEL% EQU 1 goto reload
 
 :enable
 cls
-echo Progress [=                     ]
+echo Progress [=                      ]
 reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time\Parameters /v Type /t REG_SZ /d NTP /f > NUL
 sc config AsusGameFirstService start= disabled >NUL 2>&1
 sc stop AsusGameFirstService >NUL 2>&1
 cls
-echo Progress [==                    ]
+echo Progress [==                     ]
 netsh advfirewall reset > NUL
 netsh firewall reset > NUL
 netsh advfirewall set currentprofile firewallpolicy blockinbound,allowoutbound > NUL
 cls
-echo Progress [==                    ]
+echo Progress [===                    ]
 set "hostfile=C:\Windows\System32\drivers\etc\hosts"
 set "tempfile=%temp%\hosts.tmp"
 set "search=win10.ipv6.microsoft.com"
@@ -145,53 +145,53 @@ type "%hostfile%" > "%tempfile%"
 findstr /v /i "%search%" "%tempfile%" > "%hostfile%"
 del "%tempfile%"
 cls
-echo Progress [===                   ]
+echo Progress [====                   ]
 netsh int teredo set state type=enterpriseclient > NUL
 cls
-echo Progress [====                  ]
+echo Progress [=====                  ]
 netsh int teredo set state refreshinterval=20 > NUL
 cls
-echo Progress [=====                 ]
+echo Progress [======                 ]
 netsh int teredo set state clientport=3074 > NUL
 cls
-echo Progress [======                ]
+echo Progress [=======                ]
 if "%TeredoServer%"=="default" (
     netsh int teredo set state servername=default > NUL
 ) else (
     netsh int teredo set state servername=%TeredoServer% > NUL
 )
 cls
-echo Progress [=======               ]
+echo Progress [========               ]
 sc config iphlpsvc start=auto > NUL
 cls
-echo Progress [========              ]
+echo Progress [=========              ]
 sc config PolicyAgent start=auto > NUL
 cls
-echo Progress [==========            ]
+echo Progress [===========            ]
 net stop PolicyAgent /y > NUL
 cls
-echo Progress [============          ]
+echo Progress [=============          ]
 net start PolicyAgent > NUL
 cls
-echo Progress [=============         ]
+echo Progress [==============         ]
 net stop iphlpsvc /y > NUL
 cls
-echo Progress [==============        ]
+echo Progress [===============        ]
 net start iphlpsvc > NUL
 cls
-echo Progress [===============       ]
+echo Progress [================       ]
 timeout 2 > NUL
 cls
-echo Progress [================      ]
+echo Progress [=================      ]
 timeout 2 > NUL
 cls
-echo Progress [===================   ]
+echo Progress [====================   ]
 timeout 2 > NUL
 cls
-echo Progress [====================  ]
+echo Progress [=====================  ]
 timeout 2 > NUL
 cls
-echo Progress [======================]
+echo Progress [=======================]
 timeout 2 > NUL
 goto startscreen
 
